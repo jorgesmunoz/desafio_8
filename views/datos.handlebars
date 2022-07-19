@@ -1,0 +1,90 @@
+<div class="container mt-3">
+  <div class="jumbotron">
+    <h1 style="color:blue;">Ingrese producto</h1>
+    <br />
+
+    <div class="row" style="justify-content: space-between">
+
+      <div class="col-sm">
+        <label for="title"><b>Title</b></label>
+        <input id="title" class="form-control" type="text" name="title" />
+      </div>
+
+      <div class="col-sm">
+        <label for="description"><b>Description</b></label>
+        <input
+          id="description"
+          class="form-control"
+          type="text"
+          name="description"
+        />
+      </div>
+
+      <div class="col-sm">
+        <label for="price"><b>Price</b></label>
+        <input id="price" class="form-control" type="number" name="price" />
+      </div>
+
+      <div class="col-sm">
+        <label for="code"><b>Code</b></label>
+        <input id="code" class="form-control" type="number" name="code" />
+      </div>
+
+      <div class="col-sm">
+        <label for="picture"><b>Picture</b></label>
+        <input id="picture" class="form-control" type="text" name="picture" />
+      </div>
+
+      <div class="col-sm">
+        <label for="stock"><b>Stock</b></label>
+        <input id="stock" class="form-control" type="number" name="stock" />
+      </div>
+
+      <button id="postButton" class="btn btn-success col-sm">Send</button>
+
+    </div>
+
+    <br />
+    <h1 style="color:red;">Lista de Productos</h1>
+    <div class="table-responsive">
+      <table class="table table-dark">
+        <tr style="color: yellow;" align="center">
+          <th>id</th>
+          <th>product</th>
+          <th>description</th>
+          <th>price</th>
+          <th>created_at</th>
+          <th>code</th>
+          <th>picture</th>
+          <th>stock</th>
+        </tr>
+        <table class="table table-dark" id="products-list"></table>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<div class="container mt-3">
+  <div class="jumbotron">
+
+    <h1 style="color:blue;">Centro de mensajes</h1>
+    <br />
+
+    <input type="email" id="user-email" placeholder="example@email.com" />
+    <hr />
+    <span style="color:blue" id="message-email"></span>
+    <br />
+    <input type="text" name="" id="user-mensaje" />
+    <button class="btn btn-info" id="enviar-mensaje">Enviar</button>
+    <br />
+
+  </div>
+</div>
+
+<script
+  src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+  integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+  crossorigin="anonymous"
+></script>
+<script src="assets/js/index.js"></script>
